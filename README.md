@@ -1,12 +1,12 @@
 # door-open-monitor-logger
 
 ## Description:
- * Alarm system that monitors and logs door opening events and displays them in an Android app
- * Kaminski - 05/2019 - fckaminski66@gmail.com
- *
- * The system has three parts:
- *
- * 1) ESP8266 board connected to your local wifi:
+ Alarm system that monitors and logs door opening events and displays them in an Android app
+ Kaminski - 05/2019 - fckaminski66@gmail.com
+ 
+ The system has three parts:
+
+ # 1) ESP8266 board connected to your local wifi:
  * - Constantly reads open/close door sensor.
  * - Updates door state in the 'door_open' Firebase child node when change is detected.
  * - Generates and uploads 'door_heartbeat' bit to Firebase.
@@ -14,12 +14,12 @@
  * - Activates a local siren when door is opened and 'local_siren' setting is set.
  * - Included WebServer and support over-the-air download
  *
- * 2) Firebase cloud-hosted NoSQL realtime database:
+# 2) Firebase cloud-hosted NoSQL realtime database:
  * - Stores child/values: disabled, 'door_open', 'door_open_long', 'door_open_long_time' and 'history'.
  * - Generates door opening history timestamp and delete old history records (cloud function).
  * - Sends Firebase Cloud Messages when door opens and if it stays opened for too long  (cloud function).
- *
- * 3) 'ESP8266 Alarms' Android app:
+
+# 3) 'ESP8266 Alarms' Android app:
  * - Listen to door state and animates door picture accordingly.
  * - Receives Firebase Cloud Messages and trigger Android notifications.
  * - Monitors communication status with the ESP8266 based on 'door_heartbeat'.
