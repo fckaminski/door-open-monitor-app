@@ -37,17 +37,17 @@
 ## ESP8266 setup:
 - Connect the door sensor to an input pin. Optional: connect a chime and a siren to two output pins.
 - Using Arduino IDE, open 'NodeMCU_DOOR.ino' project.
-- Install ESP8266 WiFi, Firebase ESP8266 Client libraries to your Arduino IDE.
+- Install 'ESP8266 WiFi' and 'Firebase ESP8266 Client' libraries to your Arduino IDE.
 - Adjust the output pins numbers used, your local WiFi SSID/password and your Firebase settings. 
 - Upload the project to your board.
 
 ## Android setup:
-- Open <firebase_arduino_android_app> project in Android Studio.
+- Import Android app project in Android Studio.
 - Select menu Tools > Firebase. At the right panel, select "Real-Time Database". Log on with your Google account and select:
 	a) Connect your App to Firebase by selecting the realtme database you created and clicking "Connect to Firebase".
-	b) Add the Realtime Database to yout app.
+	b) Add the Realtime Database to your app.
   If you need help here, refer to the tutorial https://medium.com/coinmonks/arduino-to-android-real-time-communication-for-iot-with-firebase-60df579f962..
 
 - Enable your phone "Developer options" and then enable "USB debugging" and "Install via USB".
-- Connect your phone to the a workstation USB port and authorize file transfer.
+- Connect your phone to the workstation USB port and authorize file transfer.
 - Check if Android Studio now list it your device in the upper menu. If so, build your application and run it.
