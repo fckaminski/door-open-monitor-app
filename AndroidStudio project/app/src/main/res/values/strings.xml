@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ESP8266 Alarms</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="default_notification_channel_id">channel_id_long</string>
+</resources>

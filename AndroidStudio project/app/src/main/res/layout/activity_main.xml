@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Connection Status"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/led"
+        app:layout_constraintEnd_toStartOf="@+id/led"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/led" />
+
+    <ImageView
+        android:id="@+id/porta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/historico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/led"
+        app:layout_constraintVertical_bias="0.453"
+        app:srcCompat="@drawable/door_closed" />
+
+    <ImageView
+        android:id="@+id/led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSiren"
+        app:srcCompat="@drawable/led_off" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSiren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Siren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layoutNotify"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/historico"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Door opening history"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/historico"
+        app:layout_constraintEnd_toEndOf="@+id/historico"
+        app:layout_constraintStart_toStartOf="@+id/historico"
+        app:layout_constraintTop_toBottomOf="@+id/led" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#4988ad"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxSiren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="9dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <Spinner
+            android:id="@+id/spinnerNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:popupBackground="#4988ad"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

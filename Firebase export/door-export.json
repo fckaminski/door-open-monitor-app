@@ -1,0 +1,18 @@
+{
+  "alarm" : {
+    "disabled" : false,
+    "door_heartbeat" : "OFF",
+    "door_open" : false,
+    "door_open_long" : false,
+    "door_open_long_time" : 240,
+    "history" : {
+      "-M3haa06MFyCrpAMD-IJ" : 1585608027451,
+      "-M3hi671fQJwqWVVZgEe" : 1585609997552,
+      "-M3hiGue0jShPogO8SYS" : 1585610039666,
+      "-M3iPI-GEns3yZbUMMRc" : 1585621580850,
+      "-M3kKucnkDFz60lF2OCR" : 1585653986784,
+      "-M57M79iM0-b61zgyKy0" : 1587130699888
+    },
+    "local_siren" : false
+  },
+}

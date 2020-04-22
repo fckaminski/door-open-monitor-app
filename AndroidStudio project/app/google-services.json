@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "111111111111",
+    "firebase_url": "https://your_firebase.firebaseio.com",
+    "project_id": "arduineira",
+    "storage_bucket": "your_firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111111111111:android:f606fc6acf0e6726",
+        "android_client_info": {
+          "package_name": "com.firebase_esp8266_android_alarm_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111111111111-0kgjn6dtehlmfmgd654hej4figbe960q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase_esp8266_android_alarm_app",
+            "certificate_hash": "9cd5eedf4e9bf745ae9efb3e4978a7d1b7ebc64e"
+          }
+        },
+        {
+          "client_id": "158785324254-sj2a35k95pda5d8312q9v7ia1u1bss46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCESu93FUKwmz0BWOEJQHxSotqreJoZkKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111111111111-a1u1bss46a5d8312q9v7isj2a35k95pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
