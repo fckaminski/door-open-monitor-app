@@ -2,6 +2,7 @@
 
 ## Description:
  Alarm system that monitors and logs door opening events and displays them in an Android app
+ 
  Kaminski - 05/2019 - fckaminski66@gmail.com
  
  The system has three parts:
